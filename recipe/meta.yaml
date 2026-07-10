@@ -24,11 +24,18 @@ requirements:
     - python >={{ python_min }}
     - libertem
     - numpy
-    - numba
+    - numba >=0.53  # [py<310]
+    - numba >=0.55  # [py==310]
+    - numba >=0.57  # [py==311]
+    - numba >=0.59  # [py==312]
+    - numba >=0.63  # [py==313]
+    - numba >=0.63  # [py>=314]
+    - ncempy
     - scipy
     - sparse
     - sparseconverter
     - scikit-image
+    - natsort
     - empyre
 
 test:
