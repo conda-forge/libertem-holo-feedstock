@@ -1,13 +1,13 @@
 {% set name = "libertem-holo" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/libertem_holo-{{ version }}.tar.gz
-  sha256: b0729f047106bfc47d03c562a04aacf9b252d3e819fd863133e31abe94507d0b
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/libertem_holo-{{ version }}.tar.gz
+  sha256: f5da95b290d103d441ea8d855e2b1f90728eecdd073a18e69a38d564c39e1c11
 
 build:
   noarch: python
